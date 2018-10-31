@@ -1,0 +1,104 @@
+body{
+    font-family: 'Dancing Script', cursive;
+    background-color: #02010a;
+}
+/*-------- encabezado ---------*/
+.encabezado{
+    margin: 0 auto;
+    width: 85%;
+
+    color: white;
+    background-color: #5b7989;
+    
+    display: flex;
+    flex-flow: row wrap;
+
+    border-radius: 10px 10px 0px 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;
+    -moz-border-radius: 10px 10px 0px 0px;
+    -o-border-radius: 10px 10px 0px 0px;
+}  
+    .title{
+        width: 40%;
+    }
+    .title h1{
+        text-shadow: 2px 2px #02010a;
+        margin-left: 15px;
+    }
+
+    nav{
+        width: 60%;
+        font-size: 1.2em;
+    }
+    nav ul{
+        list-style-type: none;
+        text-align: right;
+    }
+    nav li{
+        display: inline-block;
+        margin: 10px;
+    }
+    nav a{
+        color: white;
+    }
+    .active{
+        text-decoration: none;
+    }
+/*--Contenido index--
+.contenido{
+    margin: 0 auto;
+    width: 85%;
+
+    display: flex;
+    flex-flow: row wrap;
+}
+    #principal{
+        width: 100%;
+        background-color: #82c3a6;
+    }
+    #principal img{
+        margin: 0 auto;
+        width: 85%;
+        border: 1px solid black;
+    }
+    #secundaria{
+        width: 100%;
+        background-color:  #d5c75f;
+    }
+    #secundaria-1, #secundaria-2{
+        width: 50%;
+    }
+    #secundaria-1 img, #secundaria-1 img{
+        margin: 0 auto;
+        width: 85%;
+        border: 2px solid black;
+    }
+
+    
+/*--Adaptative Config--*/
+@media (max-width: 600px) {
+    /*----Encabezado mobile----*/
+    .encabezado{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .title{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+    nav{
+        width: 100%;
+        font-size: 1.2em;
+    }
+    nav ul{
+        text-align: center;
+        margin-left: 0px;
+    }
+    nav li{
+        display: inline-block;
+        float: none;
+
+    }
+
+}

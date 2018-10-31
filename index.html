@@ -2,13 +2,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Comenzando con la fotografía</title>
+    
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+
+    <title>Comenzando con la fotografía</title>
+    
 </head>
 <body>
-    <header id="encabezado">
-        <h1>Comenzando con la fotografía</h1>
+    <header class="encabezado">
+        <div class="title">
+            <h1>Comenzando con la fotografía</h1>
+        </div>
         <nav>
             <ul>
                 <li><a href="#" class="active">Inicio</a></li>
@@ -18,34 +23,35 @@
         </nav>
     </header>
     
-    <div id="contenido">
-        <section>
-            <article id="columna1">
-                <img src="images/imagen-central.jpg" alt="Principal">
-            </article>
-            <article id="columna2">
-                <img src="images/paisaje.jpg" alt="Paisaje">
+    
+    <section class="contenido">
+        <article id="principal">
+            <img src="images/imagen-central.jpg" alt="Principal">
+        </article>
+        <article id="secundaria">
+            <div id="secundaria-1">
+                <img src="images/paisaje.jpg" alt="Paisaje">                
                 <a href="pages/paisajes.html">Paisajes</a>
-            </article>
-            <article id="columna3">
+            </div>
+            <div id="secundaria-2">
                 <img src="images/retrato.jpg" alt="Retrato">
                 <a href="pages/retratos.html">Retratos</a>
-            </article>
-        </section>
-    </div>
+            </div>
+        </article>
+    </section>
     
-    <footer id="pie-pagina">
-        <div id="contacto">
+    <footer class="pie-pagina">
+        <div class="bloque">
             <h3>Contacto</h3>
             <a href="mailto:pablotorres0895@gmail.com">pablotorres0895@gmail.com</a>
             <p>Heredia, Costa Rica.</p>
             <p>(+506) 8709-1616</p>
         </div>
-        <div id="terminos">
+        <div class="bloque">
             <h3>Términos</h3>
             <p>Al ingresar al sitio acepto los términos y condiciones...</p>
         </div>
-        <div id="redes-sociales">
+        <div class="bloque">
             <h3>Redes Sociales</h3>
             <p>Visita mis redes sociales</p>
             <ul>
@@ -53,7 +59,7 @@
                 <li>Twitter</li>
             </ul>
         </div>
-        <div id="derechos">
+        <div class="bloque">
             <h3>Derechos</h3>
             <p>Copyright - 2019</p>
         </div>
