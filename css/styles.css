@@ -2,10 +2,151 @@ body{
     font-family: 'Dancing Script', cursive;
     background-color: #02010a;
 }
-/*-------- encabezado ---------*/
-.encabezado{
+#content{
     margin: 0 auto;
-    width: 85%;
+    width: 900px;
+}
+img{
+    width: 100%;
+    height: auto;
+    box-shadow: 2px 2px #02010a;
+}
+/*--Encabezado--*/
+.encabezado{
+    width: 100%;
+    color: white;
+    background-color: #5b7989;
+    
+    display: flex;
+    flex-flow: row wrap;
+
+    border-radius: 10px 10px 0px 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;
+    -moz-border-radius: 10px 10px 0px 0px;
+    -o-border-radius: 10px 10px 0px 0px;
+}  
+    .title{
+        width: 40%;
+    }
+    .title h1{
+        text-shadow: 2px 2px #02010a;
+        margin-left: 15px;
+    }
+
+    nav{
+        width: 60%;
+        font-size: 1.2em;
+    }
+    nav ul{
+        list-style-type: none;
+        text-align: right;
+    }
+    nav li{
+        display: inline-block;
+        margin: 10px;
+    }
+    nav a{
+        color: white;
+    }
+    .active{
+        text-decoration: none;
+    }
+/*Contenido*/
+#principal {
+    width: 100%;
+    background-color: #82c3a6;
+    overflow: hidden;
+}
+    #imagen-central{
+        width: 85%;
+        height: 85%;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    } 
+    #imagen-central img{
+        width: 100%;
+        height: 100%;
+    }
+
+#secundario{
+    width: 100%;
+    background-color:  #d5c75f ;
+    display: flex;
+    flex-flow: row wrap;
+}
+    #paisaje, #retrato{
+        width: 40%;
+        height: 85%;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    } 
+    #paisaje img, #retrato img{
+        width: 100%;
+        height: 100%;
+    }
+    article a{
+        text-align: center;
+        color: black
+    }
+@media (min-width:600px) and (max-width: 900px){
+    /*Encabezado y contenido*/
+    #content{
+        width: 100%;
+    }
+    .title{
+        width: 50%;
+    }
+    nav{
+        width: 50%;
+    }
+    /*Contenido*/
+}
+@media (min-width:420px) and (max-width: 600px){
+    /*Encabezado y contenido*/
+    .encabezado{
+        padding: 0;
+    }
+    #content{
+        width: 100%;
+    }
+    .title{
+        width: 65%;
+    }
+    nav{
+        width: 35%;
+    }
+    /*Contenido*/
+}
+@media (max-width: 420px){
+    /*Encabezado y contenido*/
+    .encabezado{
+        padding: 0;
+    }
+    #content{
+        width: 100%;
+    }
+    .title{
+        width: 100%;
+        text-align: center;
+    }
+    nav{
+        width: 100%;
+    }
+    nav ul{
+        text-align: center;
+        
+        margin: 0;
+    }
+    nav li{
+        display: inline-block;
+    }
+    /*Contenido*/
+}
+/*-------- encabezado ---------
+.encabezado{
+    width: 100%;
 
     color: white;
     background-color: #5b7989;
@@ -44,6 +185,7 @@ body{
     .active{
         text-decoration: none;
     }
+*/
 /*--Contenido index--
 .contenido{
     margin: 0 auto;
@@ -76,8 +218,8 @@ body{
 
     
 /*--Adaptative Config--*/
-@media (max-width: 600px) {
-    /*----Encabezado mobile----*/
+/*@media (max-width: 600px) {
+    /*----Encabezado mobile----
     .encabezado{
         width: 100%;
         margin: 0 auto;
@@ -101,4 +243,4 @@ body{
 
     }
 
-}
+}*/
