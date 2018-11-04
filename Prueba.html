@@ -8,12 +8,12 @@
     <style>
 
        
-        body{
+        /*body{
 
             font-size: 20px;
         }
         .encabezado{
-            margin: 0 auto; /*para poner el elemento en el centro*/
+            margin: 0 auto; /*para poner el elemento en el centro
             width: 85%;
             display: flex;
             flex-flow: row wrap;
@@ -32,7 +32,7 @@
             
         }
         .contenedor{
-            margin: 0 auto; /*para poner el elemento en el centro*/
+            margin: 0 auto; /*para poner el elemento en el centro
             width: 85%;
             background-color: blue;
             display: flex;
@@ -54,7 +54,7 @@
             background: green;
         }
         .footer{
-            margin: 0 auto; /*para poner el elemento en el centro*/
+            margin: 0 auto; /*para poner el elemento en el centro
             width: 85%;
             display: flex;
             flex-flow: row wrap;
@@ -149,23 +149,58 @@
             background-color: rgba(0, 255, 191, 0.301);
             width: 25%;
         }*/
+        #content{
+            margin: 1%;
+	        text-align: center;
+            width: 900px;
+        }
+
+        #secundario{
+            width: 100%;
+            background-color:  #d5c75f ;
+            display: flex;
+            flex-flow: row wrap;
+            
+        }
+            #paisaje, #retrato{
+                width: 50%;
+            } 
+            /*#paisaje img, #retrato img{
+                display: block;
+            }
+            article{
+                text-align: center;
+                color: black
+            }*/
+            img {
+
+    width: 50%;
+    display: block;
+}
     </style>
 </head>
 <body>
-    <div class="encabezado">
+
+    <!--div class="encabezado">
         <div class="title"></div>
         <div class="nav"></div>
+    </div-->
+    <div id="contenedor">
+        <section id="secundario">
+            <article id="paisaje">
+                <img src="images/paisaje.jpg" alt="Paisaje">
+            </article>
+            <article id="retrato">
+                <img src="images/retrato.jpg" alt="Retrato">
+            </article>
+        </section>
     </div>
-    <div class="contenedor">
-        <div id="principal"></div>
-        <div id="sec-1"></div>
-        <div id="sec-2"></div>
-    </div>
-    <div class="footer">
+    <!--div class="footer">
         <div class="foot1"></div>
         <div class="foot2"></div>
         <div class="foot3"></div>
         <div class="foot4"></div>
-    </div>
+        
+    </div-->
 </body>
 </html>
