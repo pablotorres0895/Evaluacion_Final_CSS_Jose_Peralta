@@ -33,7 +33,6 @@ img{
         text-shadow: 2px 2px #02010a;
         margin-left: 15px;
     }
-
     nav{
         width: 60%;
         font-size: 1.2em;
@@ -59,14 +58,11 @@ img{
     display: flex;
     flex-flow: row wrap;
 }
-    #imagen-central{
-        width: 100%;
+    #imagen-central img{
+        width: 85%;
         margin: 0 auto;
         margin-top: 20px;
         margin-bottom: 20px;
-    }
-    #imagen-central{
-        display: block;
     }
 
 #secundario, #galeria{
@@ -83,6 +79,8 @@ img{
     } 
     #paisaje img, #retrato img{
         display: block;
+        
+        transition-duration: 1s;
     }
     #paisaje a, #retrato a{
         color: #02010a;
@@ -91,7 +89,18 @@ img{
         text-align: center;
         color: black
     }
-
+    /*Animaciones*/
+    #paisaje img:hover{
+        transform: rotate(10deg);
+        border: 2px solid black;
+        box-shadow: 2px 2px #82c3a6;
+    }
+    #retrato img:hover{
+        transform: translate(20px, -5px);
+        border: 2px solid black;
+        box-shadow: 2px 2px #82c3a6;
+    }
+    /*Sección de Galería*/
     #galeria article{
         width: 30%;
 
@@ -99,10 +108,10 @@ img{
         margin-top: 20px;
         margin-bottom: 20px;
     }
-
     section#galeria article:nth-child(even) img{ filter: grayscale(100%);}
     section#galeria article:nth-child(1) img{ filter: blur(10px);}
     section#galeria article:nth-child(3) img{ filter: sepia(90%);}
+
 /*--Pie de Pagina--*/
 .pie-pagina{
     background-color: #C6d5c5;
