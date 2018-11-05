@@ -25,6 +25,9 @@ img{
     -webkit-border-radius: 10px 10px 0px 0px;
     -moz-border-radius: 10px 10px 0px 0px;
     -o-border-radius: 10px 10px 0px 0px;
+
+
+    animation: slidein 1s;
 }  
     .title{
         width: 40%;
@@ -51,6 +54,17 @@ img{
     .active{
         text-decoration: none;
     }
+    @-webkit-keyframes slidein{
+        from{
+            margin-top: 150%;
+        }
+        60%{
+            margin-top: -5%;
+        }
+        100%{
+            margin-top: 0%;
+        }
+    }    
 /*Contenido*/
 #principal {
     width: 100%;
@@ -89,6 +103,7 @@ img{
         text-align: center;
         color: black
     }
+    
     /*Animaciones*/
     #paisaje img:hover{
         transform: rotate(10deg);
@@ -100,6 +115,7 @@ img{
         border: 2px solid black;
         box-shadow: 2px 2px #82c3a6;
     }
+    
     /*Sección de Galería*/
     #galeria article{
         width: 30%;
